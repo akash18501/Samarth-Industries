@@ -1,0 +1,175 @@
+{% load  static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Samarth Industries</title>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'home/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'home/css/style2.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/contact.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/products.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/client.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/aboutUs_styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/faq.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/manu.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/cer.css' %}">
+    <link rel="shortcut icon" type="image/png" href = "{% static 'home/img/fevicon.jpg' %}">
+
+    <!-- font-awesome icons -->
+	<script src="{% static 'home/js/all.js' %}"></script>
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<header class="container-fluid  p-0">
+
+		<!-- navigation bar starts -->
+		<nav class="  navbar navbar-expand-lg navbar-light bg-transparent fixed-top inverse">
+
+			   <a class="navbar-brand text-white d-flex justify-content-center align-items-center" href="{% url 'homepage' %}">
+			  	<div>
+			  	<img class="img-fluid brand-image inverse-brand-image" src="{% static 'home/img/logo.jpg' %}"  alt="">
+			   </div>
+			  	<div class="brand-title inverse-brand-title">
+			  		<span class="d-block">SAMARTH</span>
+			  		<span class="d-block">INDUSTRIES</span>
+			  	</div>
+			  </a>
+
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mydropdown" aria-controls="mydropdown" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse invert-drop text-center" id="mydropdown">
+			    <ul class="navbar-nav ml-auto ">
+				      <li class="nav-item ">
+				        <a class="nav-link" href="{% url 'homepage' %}">Home<span class="sr-only">(current)</span></a>
+				      </li>
+                      <li class="nav-item ">
+				        <a class="nav-link" href="{% url 'about_us' %}">About<span class="sr-only">(current)</span></a>
+				      </li>
+                     <li class="nav-item ">
+				        <a class="nav-link" href="{% url 'expansion' %}">Our Facilities<span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="{% url 'products' %}">Products</a>
+				      </li>
+				       <li class="nav-item">
+				        <a class="nav-link" href="{% url 'our_client' %}">Clients</a>
+				      </li>
+				       <li class="nav-item">
+				        <a class="nav-link" href="{% url 'homepage' %}#testimonial">Testimonials</a>
+				      </li>
+				       <li class="nav-item">
+				        <a class="nav-link" href="{% url 'homepage' %}#features">Why us?</a>
+				      </li>
+				       <li class="nav-item">
+				        <a class="nav-link" href="{% url 'contact_form' %}">Contact Us</a>
+				      </li>
+			    </ul>
+			  </div>
+		</nav>
+		<!-- navigation bar ends -->
+
+	</header>
+
+
+    <section class="main-content">
+
+        {% block content %}
+
+        {% endblock %}
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- footer starts -->
+
+
+
+		<footer class="footer py-1">
+
+			<div class="container">
+				<div class="row justify-content-center py-3">
+					<div class="col-12 text-center">
+			      	  <a href="https://www.facebook.com/Samarth-Industries-100896405224708" target="_blank"><i class="fab fa-facebook fa-2x social"></i></a>
+				      <a href="https://www.linkedin.com/company/samarth-industries" target="_blank"><i class="fab fa-twitter fa-2x social"></i></a>
+				      <a href="https://instagram.com/samarth_industries_?igshid=2pa1y8lq0149" target="_blank"><i class="fab fa-instagram fa-2x social"></i></a>
+				      <a href="https://twitter.com/samarth_ind" target="_blank"><i class="fab fa-linkedin fa-2x social"></i></a>
+					</div>
+				</div>
+				<div class="row justify-content-center font-italic">
+					<div class="col-12 col-md-6 col-lg-4 text-center mb-5">
+						<h2 class="footer-quick text-white">Quick Links</h2>
+						<div class="footer-quick-list">
+							<a href="{% url 'homepage' %}">Home</a>
+							<a href="{% url 'about_us' %}">About Us</a>
+							<a href="{% url 'faq' %}">FAQ</a>
+							<a href="{% url 'products' %}">Products</a>
+                            <a href="{% url 'certificate' %}">Our Certification</a>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 text-center text-white font-italic mb-3">
+						<h2 class="footer-address">Address</h2>
+						<p class="footer-adderess-desc">Samarth Industries
+						Address:  12/25, D-1 BLOCK, CHINCHWAD MIDC, PUNE-411019
+						Contact No.-
+                            <a href="tel:020-27440142" class="text-decoration-none text-success"><span>020-27440142</span></a>
+                             <a href="tel:9822507430" class="text-decoration-none text-success"><span>9822507430</span></a>
+						Email- samarthindustries@hotmail.com
+						</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 font-italic text-center text-white mb-3">
+						<h2>Location</h2>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15120.647039648995!2d73.7960259!3d18.6567358!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed97df72a70b4224!2sUnique%20Industries!5e0!3m2!1sen!2sin!4v1598013450259!5m2!1sen!2sin" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="text-center copy m-auto text-white font-italic">
+			       	 &copy; Copyright Samarth Industries 2020
+			        </div>
+				</div>
+			</div>
+
+		</footer>
+
+
+
+	<!-- footer ends -->
+
+
+	</section>
+
+
+
+
+
+
+	<script src="{% static 'home/js/script.js' %}"></script>
+    <script src="{% static 'home/js/script2.js' %}"></script>
+	<!-- jquery -->
+	<script src="{% static 'home/js/jquery-3.4.1.min.js' %}"></script>
+	<!-- bootstrap js	 -->
+	<script src="{% static 'home/js/bootstrap.bundle.min.js' %}"></script>
+
+
+</body>
+</html>

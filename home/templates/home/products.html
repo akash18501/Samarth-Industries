@@ -1,0 +1,111 @@
+{% extends 'home/base.html' %}
+{% load  static %}
+
+
+{% block content %}
+
+	<div class="products-container">
+		
+		<h1 class="products-header text-center  pt-5 font-weight-bold">
+			OUR PRODUCTS
+		</h1>
+
+		<div class="container-fluid products-wrapper text-center">
+
+
+			<!-- single product starts -->
+			<div class="row justify-content-center py-5" id="helloman">
+ 				<div class="col-12 col-lg-4 text-center product-image-col d-md-flex flex-md-column justify-content-center">
+ 					<img class="img-fluid product-image align-self-center" src="{% static 'home/img/nonferrous.jpg' %}" alt="shell-core-product-2">
+ 				</div>
+ 				<div class="col-12 col-lg-6  product-description-col">
+ 					<h2 class="single-product-header text-center mb-5">Non-ferrous Castings</h2>
+ 					<p class="product-paragraph text-left">Non-ferrous alloys do not contain iron in appreciable amounts. Common materials are aluminum, brass, copper and titanium. Non-ferrous castings can be made using sand casting process, investment process, or metal mold process including low pressure permanent mold process and high pressure die casting process (HDC). </p>
+
+ 					<p class="product-paragraph text-left">Non-ferrous metal castings  known for featherweight factor that lowers overall weight while maintaining structural integrity. These castings have non-magnetic property and  resistance to corrosion.</p>
+
+ 					<p class="product-paragraph text-left">Due to certain inherent advantages of mechanical and chemical properties, the use of non-ferrous castings is increasing day by day. The consumption of these items is by Automobile Industries, machine manufacturing Industries, Textile Industries, Electrical Industries and so on</p>
+
+                    <a href="{% url 'contact_form' %}"><button class="btn btn-lg btn-primary my-5 p-3 product-button">Contact For Orders</button></a>
+ 				</div>
+			</div>
+			<!-- single-product  ends-->
+
+
+
+
+		</div>
+	</div>
+
+     <!-- Page Content -->
+        <div class="container">
+            <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Product Gallery</h1>
+            <hr class="mt-2 mb-5">
+            <div class="row text-center text-lg-left">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="{% static 'home/img/b.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="{% static 'home/img/c.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="{% static 'home/img/d.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="{% static 'home/img/e.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="{% static 'home/img/f.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="{% static 'home/img/a.jpg' %}" alt="" style="height: 193px; width: 400px">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="{% static 'home/img/b.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="{% static 'home/img/m.jpg' %}" alt="" style="height: 193px; width: 400px">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="{%  static 'home/img/n.jpg' %}" alt="" style="height: 193px; width: 400px">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                       <img class="img-fluid img-thumbnail" src="{% static 'home/img/q.jpg' %}" alt="" style="height: 193px; width: 400px">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="{% static 'home/img/j.jpg' %}" alt="" style="height: 193px; width: 400px">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                       <img class="img-fluid img-thumbnail" src="{% static 'home/img/r.jpg' %}" alt="" style="height: 193px; width: 400px">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+
+
+
+{% endblock %}
